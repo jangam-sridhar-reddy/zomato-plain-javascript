@@ -1,0 +1,32 @@
+// /////////////////////////////////
+//container
+
+.container {
+    max-width: 120rem;
+    margin: 8rem auto;
+}
+
+/////////////////////////////////////
+//output 
+
+.output {
+    display: flex;
+}
+
+/////////////////////////////
+// border-top
+
+.border-top {
+    position: relative;
+    padding: 2rem 0;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top:0;
+        left: -2rem;
+        right: -2rem;
+        height: 1px;
+        background-color: var(--color__ededed);
+    }
+}

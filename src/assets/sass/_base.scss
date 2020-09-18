@@ -1,0 +1,29 @@
+:root{
+    --color__orange-1 : #e8500e;
+    --color__222222 : #222222;
+    --color__ededed: #ededed;
+    --color__fcfbf9: #fcfbf9;
+    --color__748796: #748796;
+
+
+}
+
+*,
+*::before, 
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color__222222);
+}

@@ -37,6 +37,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.11.5",
-    "axios": "^0.20.0"
+    "axios": "^0.20.0",
+    "svg-sprite-loader": "^5.0.0"
   }
 }

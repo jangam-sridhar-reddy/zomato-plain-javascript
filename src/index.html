@@ -3,9 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <title>zomato</title>
 </head>
 <body>
-    <h1>Zomato app</h1>
+    <main>
+        <div class="banner">
+            <div class="banner__logo">
+                <img src="assets/images/zomato-logo-2.png" alt="logo" class="banner__logo__photo">
+            </div>
+            <div class="banner__content">
+                <h1 class="banner__text">Order Delivery & Take-Out</h1>
+                <form action="#" class="banner__form">
+                    <input type="text" class="banner__input" placeholder="Search for restaurant, cuisine or a dish">
+                    <button type="button" class="banner__btn">
+                        <span class="banner__btn__text">search</span>
+                        <svg class="banner__btn__icon">
+                            <use xlink:href="#sprite_icon-magnifying-glass"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="output">
+                <div class="filter">
+                    <div class="filter__search">
+                        <input type="text" class="filter__search__input" placeholder="search food">
+                        <button type="button" class="filter__search__button">search</button>
+                    </div>
+                    <div class="filter__cuisines border-top">
+                        <select name="" class="filter__dropdown" id="">
+                            <option value="0">select cuisine</option>
+                            <option value="1">indian</option>
+                            <option value="2">china</option>
+                        </select>
+                    </div>
+                    <div class="filter__ratings border-top">
+                        <h2 class="filter__heading">rating</h2>
+                        <ul class="filter__list">
+                            <li class="filter__item">
+                                <input type="radio"class="filter__radio"  name="rating" value="five" id="">
+                                <ul class="filter__star__list">
+                                    <li class="filter__star__item">
+                                        <svg class="filter__icon">
+                                            <use xlink:href="#sprite_icon-star-full"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="filter__star__item">
+                                        <svg class="filter__icon">
+                                            <use xlink:href="#sprite_icon-star-full"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="filter__star__item">
+                                        <svg class="filter__icon">
+                                            <use xlink:href="#sprite_icon-star-full"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="filter__star__item">
+                                        <svg class="filter__icon">
+                                            <use xlink:href="#sprite_icon-star-full"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="filter__star__item">
+                                        <svg class="filter__icon">
+                                            <use xlink:href="#sprite_icon-star-full"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="filter__item">
+                                <input type="radio"class="filter__radio"  name="rating" value="four" id="">
+                                <ul class="filter__star__list">
+                                    <li class="filter__star__item">
+                                        <svg class="filter__icon">
+                                            <use xlink:href="#sprite_icon-star-full"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="filter__star__item">
+                                        <svg class="filter__icon">
+                                            <use xlink:href="#sprite_icon-star-full"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="filter__star__item">
+                                        <svg class="filter__icon">
+                                            <use xlink:href="#sprite_icon-star-full"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="filter__star__item">
+                                        <svg class="filter__icon">
+                                            <use xlink:href="#sprite_icon-star-full"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="filter__star__item">
+                                        <svg class="filter__icon">
+                                            <use xlink:href="#sprite_icon-star-empty"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="filter__item">
+                                <input type="radio"class="filter__radio"  name="rating" value="three" id="">
+                                <ul class="filter__star__list">
+                                    <li class="filter__star__item">
+                                        <svg class="filter__icon">
+                                            <use xlink:href="#sprite_icon-star-full"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="filter__star__item">
+                                        <svg class="filter__icon">
+                                            <use xlink:href="#sprite_icon-star-full"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="filter__star__item">
+                                        <svg class="filter__icon">
+                                            <use xlink:href="#sprite_icon-star-full"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="filter__star__item">
+                                        <svg class="filter__icon">
+                                            <use xlink:href="#sprite_icon-star-empty"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="filter__star__item">
+                                        <svg class="filter__icon">
+                                            <use xlink:href="#sprite_icon-star-empty"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="filter__item">
+                                <input type="radio"class="filter__radio"  name="rating" value="two" id="">
+                                <ul class="filter__star__list">
+                                    <li class="filter__star__item">
+                                        <svg class="filter__icon">
+                                            <use xlink:href="#sprite_icon-star-full"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="filter__star__item">
+                                        <svg class="filter__icon">
+                                            <use xlink:href="#sprite_icon-star-full"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="filter__star__item">
+                                        <svg class="filter__icon">
+                                            <use xlink:href="#sprite_icon-star-empty"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="filter__star__item">
+                                        <svg class="filter__icon">
+                                            <use xlink:href="#sprite_icon-star-empty"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="filter__star__item">
+                                        <svg class="filter__icon">
+                                            <use xlink:href="#sprite_icon-star-empty"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="filter__item">
+                                <input type="radio"class="filter__radio"  name="rating" value="one" id="">
+                                <ul class="filter__star__list">
+                                    <li class="filter__star__item">
+                                        <svg class="filter__icon">
+                                            <use xlink:href="#sprite_icon-star-full"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="filter__star__item">
+                                        <svg class="filter__icon">
+                                            <use xlink:href="#sprite_icon-star-empty"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="filter__star__item">
+                                        <svg class="filter__icon">
+                                            <use xlink:href="#sprite_icon-star-empty"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="filter__star__item">
+                                        <svg class="filter__icon">
+                                            <use xlink:href="#sprite_icon-star-empty"></use>
+                                        </svg>
+                                    </li>
+                                    <li class="filter__star__item">
+                                        <svg class="filter__icon">
+                                            <use xlink:href="#sprite_icon-star-empty"></use>
+                                        </svg>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </main>
 </body>
 </html>
