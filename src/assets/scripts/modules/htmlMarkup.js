@@ -196,7 +196,7 @@ const resultHtml = (responses) => {
                                     </div>
                                 </div>
                                 <div class="result__rating">
-                                    ${ratingHtml(response.restaurant.user_rating.aggregate_rating)} 
+                                    ${ratingHtml(response.restaurant.user_rating.aggregate_rating)}  
                                 </div>
                             </div>`
                 })}
