@@ -33,6 +33,7 @@ const CallApi = async (serachValue) => {
     const filterSearchButton = container.querySelector(".filter__search__button");
     const filterSDropdown = container.querySelector(".filter__dropdown");
     const filterSRadioButtons = container.querySelectorAll(".filter__radio");
+    const filterResultElement = container.querySelector(".result");
 
     
     
@@ -42,7 +43,8 @@ const CallApi = async (serachValue) => {
         filterSearchButton,
         filterSDropdown,
         filterSRadioButtons,
-        exportObject
+        exportObject,
+        filterResultElement
     }
 
 }

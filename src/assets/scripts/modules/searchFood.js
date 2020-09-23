@@ -1,4 +1,5 @@
 import callApi from "./callApi";
+import filterSearch from "./filterSearch";
 
 
 const searchFood = () => {
@@ -15,8 +16,10 @@ const searchFood = () => {
             const result = await response;
             return result;
         };
+        const dataObject = getResults(value);
 
-        return getResults(value);
+        filterSearch(dataObject);
+    
 
 
     }
