@@ -46,5 +46,4 @@ const showResults = (responses) => {
   return result;
 };
 
-
 export default showResults;
