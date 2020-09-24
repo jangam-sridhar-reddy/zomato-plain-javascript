@@ -1,6 +1,7 @@
 import callApi from "./callApi";
 import filterSearch from "./filterSearch";
 import dropdownFilter from "./dropdownFilter";
+import ratingFilter from "./ratingFilter";
 
 const searchFood = () => {
   const bannerInput = document.querySelector(".banner__input");
@@ -19,6 +20,7 @@ const searchFood = () => {
 
     filterSearch(dataObject);
     dropdownFilter(dataObject);
+    ratingFilter(dataObject);
   };
 
   bannerButton.addEventListener("click", searching);

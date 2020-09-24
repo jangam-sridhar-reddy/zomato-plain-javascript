@@ -84,9 +84,8 @@ const dropdownFilter = async (obj) => {
       });
       cuisinesListArrayOutput = cuisinesListArrayOutput.concat(output);
     });
-    console.log(cuisinesListArrayOutput);
+
     const concatedArray = duplicateArray(cuisinesListArrayOutput);
-    console.log(concatedArray);
 
     const finalFilter = concatedArray.map((item) => {
       let itm = item.toLowerCase();
